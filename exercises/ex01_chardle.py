@@ -28,7 +28,9 @@ if five_character_word[4] == single_character:
     print(single_character, "found at index 4")
     count = count + 1
 
-if count > 0:
+if count > 1:
     print(count, "instances of", single_character, "found in", five_character_word)
+if count == 1:
+    print(count, "instance of", single_character, "found in", five_character_word)
 else:
     print("No instances of", single_character, "found in", five_character_word)
