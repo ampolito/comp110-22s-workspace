@@ -1,6 +1,6 @@
 """Ex-O2: A program to guess the secret word!""" 
 
-___author___ = "730403071"
+__author__ = "730403071"
 
 secret_word: str = "python"
 guess: str = input(f"What is your {len(secret_word)} letter guess? ")
@@ -24,7 +24,7 @@ while cont:
         print("Woo! You got it!")
         cont = False  # ends the loop if the guess was correct 
     elif len(guess) != len(secret_word):  # checking the length of guess 
-        guess: str = input(f"That was not {len(secret_word)} letters! Try again: ")
+        guess = input(f"That was not {len(secret_word)} letters! Try again: ")
     elif len(guess) == len(secret_word):  # while the length is correct, comparing the guess index to the indices of the secret word
         
         while index_guess_word < len(secret_word):
